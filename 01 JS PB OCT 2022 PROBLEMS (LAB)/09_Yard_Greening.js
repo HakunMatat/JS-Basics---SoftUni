@@ -13,5 +13,7 @@ function yardGreening(i) {
 
 yardGreening(["550"])
 
-// •	"The final price is: {крайна цена на услугата} lv."
-// •	"The discount is: {отстъпка} lv."
+/*
+•	"The final price is: {крайна цена на услугата} lv."
+•	"The discount is: {отстъпка} lv."
+*/
