@@ -1,9 +1,9 @@
 function inchesToCentimeres(input) {
-    let inch = 2.54
-    
-    let cm = Number(input[0]) * inch
+    let inch = 2.54;
 
-    console.log(cm)
+    let cm = Number(input[0]) * inch;
+
+    console.log(cm);
 }
 
-inchesToCentimeres(["5"])
+inchesToCentimeres(['5']);
