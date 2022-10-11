@@ -4,7 +4,7 @@ function lunchBreak(index) {
     let movieBreak = Number(index[2]);
 
     let timeLeft = movieBreak - movieBreak * (1 / 8) - movieBreak * (1 / 4);
-    console.log(timeLeft);
+    // console.log(timeLeft);
 
     if (movieLenght <= timeLeft) {
         console.log(`You have enough time to watch ${movieName} and left with ${Math.ceil(timeLeft - movieLenght)} minutes free time.`);
