@@ -34,10 +34,6 @@ function timeMinutes(input) {
 
     if (hour > 23) {
         hour = 0;
-        //   } else if ((hour = 0)) {
-        //     //     hour = 0;
-        //   } else if ((hour = 0)) {
-        //     hour = 0;
     }
 
     if (minutesPlus < 10) {
