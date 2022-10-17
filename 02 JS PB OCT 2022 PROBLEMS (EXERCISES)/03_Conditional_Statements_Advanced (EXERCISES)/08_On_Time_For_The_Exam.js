@@ -9,7 +9,7 @@ function onTimeForTheExam(input) {
         if (minutesExam > arrivalMinutes) {
             time = 'On Time';
         } else {
-            time = 'Late';
+            time = 'Late on';
         }
     }
 }
