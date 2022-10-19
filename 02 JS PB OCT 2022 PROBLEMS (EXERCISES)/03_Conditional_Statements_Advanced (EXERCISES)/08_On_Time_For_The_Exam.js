@@ -39,7 +39,7 @@ function onTimeForTheExam(input) {
         // Late
     } else {
         timeDifference = Math.abs(timeDifference); // 20
-        lateHour = Math.floor(timeDifference / 60); // 0
+        lateHour = Math.floor(timeDifference / 60); // 00
         lateMin = timeDifference % 60; // 20
         if (timeDifference <= 59) {
             console.log('Late');
