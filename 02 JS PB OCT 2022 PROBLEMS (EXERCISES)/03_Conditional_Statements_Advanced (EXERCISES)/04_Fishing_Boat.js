@@ -50,7 +50,7 @@ function fishingBoat(input) {
                 totalPrice *= 0.95;
             }
         }
-        // Winter
+        // Winter.
     } else if (season == 'Winter') {
         fishboat = 2600;
         if (fishermen <= 6) {
