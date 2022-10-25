@@ -3,7 +3,6 @@ function journey(input) {
     const season = input[1];
     let destination = '';
     let holidayType = '';
-    // console.log(budget);
 
     if (budget <= 100) {
         destination = 'Bulgaria';
