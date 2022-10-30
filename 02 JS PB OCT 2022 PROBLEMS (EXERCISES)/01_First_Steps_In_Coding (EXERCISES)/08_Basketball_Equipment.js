@@ -11,4 +11,4 @@ function basketballEquipment(input) {
     console.log(totalCost);
 }
 
-// basketballEquipment(['550']);
+basketballEquipment(['550']);
