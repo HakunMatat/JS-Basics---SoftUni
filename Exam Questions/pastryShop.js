@@ -2,11 +2,12 @@ function pastryShop(input) {
     let sweet = input[0];
     let purchasedSweets = Number(input[1]);
     let dateOfDecember = Number(input[2]);
-    cakePrice = 0;
-    soufflePrice = 0;
-    baklavaPrice = 0;
-    sum = 0;
-    discountSum = 0;
+    let cakePrice = 0;
+    let soufflePrice = 0;
+    let baklavaPrice = 0;
+    let sum = 0;
+    let discount = 0;
+    let discountSum = 0;
 
     if (sweet === 'Cake') {
         if (dateOfDecember <= 15) {
@@ -36,23 +37,26 @@ function pastryShop(input) {
 
     if (dateOfDecember <= 22) {
         if (sum >= 100 && sum <= 200) {
-            discountSum = sum - sum * 0.15;
+            sum = sum * 0.85;
         } else if (sum > 200) {
-            discountSum = sum - sum * 0.25;
+            sum = sum * 0.75;
         }
     }
 
     if (dateOfDecember <= 15) {
-        bonusDiscount = discountSum - discountSum * 0.1;
-        console.log(`${bonusDiscount.toFixed(2)}`);
+        sum = sum * 0.9;
+    }
+
+    if (dateOfDecember <= 15) {
+        console.log(`${sum.toFixed(2)}`);
     } else if (dateOfDecember > 15 && dateOfDecember <= 22) {
-        console.log(`${discountSum.toFixed(2)}`);
+        console.log(`${sum.toFixed(2)}`);
     } else {
         console.log(`${sum.toFixed(2)}`);
     }
 }
 
-// pastryShop(['Cake', '10', '15']);
+pastryShop(['Cake', '10', '15']);
 // pastryShop(['Souffle', '20', '24']);
-pastryShop(['Baklava', '50', '1']);
+// pastryShop(['Baklava', '50', '1']);
 // pastryShop(['Cake', '5', '12']);
